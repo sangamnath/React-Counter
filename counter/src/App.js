@@ -2,7 +2,7 @@
 import './App.css';
 import React from "react"
 import './style.css';
-
+import Count from './Count';
 function App() {
 
 const [count, setCount] = React.useState(0)
@@ -18,9 +18,9 @@ function subtract(){
     <div className="App">
       <div className="counter">
             <button className="counter--minus" onClick={subtract}>–</button>
-            <div className="counter--count">
-                <h1>{count}</h1>
-            </div>
+            
+                <Count number={count}/>
+          
             <button className="counter--plus" onClick={add}>+</button>
         </div>
      </div>
